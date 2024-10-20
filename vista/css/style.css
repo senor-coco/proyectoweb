@@ -1,0 +1,19 @@
+.nav-link{
+    color: black;
+}
+nav{
+    background-color: red;
+}
+.nav-link:hover{
+    color: white;
+}
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(20, 20, 20);
+    color: white;
+    height: 80px;
+    text-align: center;
+}
