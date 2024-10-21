@@ -42,7 +42,7 @@ nav {
 
 /* Contenedor que agrupa los enlaces, ahora cuadrado con bordes redondeados */
 .nav-group {
-    background-color: #ffffff88; /* Cambia aquí al color que desees */
+    background-color: hsla(0, 0%, 100%, 0.833); /* Cambia aquí al color que desees */
     border-radius: 15px; /* Borde redondeado pero no completamente circular */
     padding: 20px 40px; /* Más espaciado horizontalmente para hacer el recuadro más ancho */
     display: inline-block; /* Hace que el contenedor ocupe solo el espacio necesario */
@@ -67,6 +67,29 @@ nav {
     border-radius: 5px;
 }
 
+/* Ajustar la posición de las tarjetas (más abajo) */
+.container {
+    margin-top: 80px;  /* Baja el contenido de las tarjetas 80px más */
+}
+
+/* Estilo de las imágenes en las tarjetas */
+.card-img-top {
+    border-radius: 15px; /* Redondear las esquinas de las imágenes */
+    border: 3px solid #000; /* Añadir un borde negro a las imágenes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para dar profundidad */
+}
+
+/* Estilo de las tarjetas */
+.card {
+    margin-bottom: 20px; /* Espacio entre las tarjetas */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra alrededor de la tarjeta */
+    transition: transform 0.2s ease-in-out; /* Transición suave cuando se pasa el cursor */
+}
+
+/* Efecto hover en las tarjetas */
+.card:hover {
+    transform: translateY(-10px); /* Mueve la tarjeta hacia arriba cuando se pasa el cursor */
+}
 
 
 /* Estilo del footer */
