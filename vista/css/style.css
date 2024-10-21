@@ -1,19 +1,48 @@
-.nav-link{
-    color: black;
-}
-nav{
+/* Estilo para la barra de navegación */
+nav {
     background-color: red;
+    background-image: url('../imagenes/jpg/fondodepantalla1.jpeg');
+    background-size: cover;
+    height: 200px; /* Ajusta la altura del nav para que los elementos se vean más abajo */
+    position: relative;
+    display: flex;
+    justify-content: center; /* Centra el contenedor circular horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
 }
-.nav-link:hover{
-    color: white;
+
+/* Contenedor que agrupa los enlaces */
+.nav-group {
+    background-color: white; /* Fondo blanco para el recuadro */
+    border-radius: 20%; /* Hace que el contenedor sea circular */
+    padding: 20px; /* Espaciado interno para darle margen al círculo */
+    display: inline-block;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Agrega una sombra sutil */
+    position: absolute;
+    bottom: 10px; /* Baja el círculo respecto al nav */
 }
-footer{
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: rgb(20, 20, 20);
-    color: white;
-    height: 80px;
+
+/* Estilo de los enlaces dentro del nav */
+.nav-link {
+    color: black;
+    padding: 10px 20px;
+    display: inline-block;
     text-align: center;
+    font-size: 18px;
 }
+
+.nav-link:hover {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px; /* Añade un pequeño borde redondeado solo al hover */
+}
+
+    footer{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: rgb(20, 20, 20);
+        color: white;
+        height: 80px;
+        text-align: center;
+    }

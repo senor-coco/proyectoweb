@@ -10,16 +10,19 @@
 <body>
 <header>
     <nav>
-        <ul class="nav justify-content-center">
-    <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#">Producto</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#">Contactos</a>
-    </li>
-        </ul>
+        <!-- Contenedor para los enlaces, con una clase adicional -->
+        <div class="nav-group">
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Conócenos</a>
+                </li>
+            </ul>
+        </div>
     </nav>
 </header>
