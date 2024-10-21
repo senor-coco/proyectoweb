@@ -72,21 +72,22 @@ nav {
     font-size: 28px; /* Tamaño de la fuente */
     text-align: center; /* Centrar el texto */
     padding: 10px; /* Añadir un padding al texto */
-    margin-bottom: 20px; /* Espacio debajo del texto */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra debajo del recuadro */
-}
 
-/* Contenedor para asegurar que los recuadros sean del mismo tamaño */
+    margin-bottom: 150px; /* Espacio debajo del texto */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra debajo del recuadro */
+    position: relative; /* Añadimos posición relativa */
+    top: 200px; /* Ajusta el valor para bajar el recuadro */
+}
 .container {
     margin-top: 80px;  /* Baja el contenido de las tarjetas 80px más */
     display: flex;
-    justify-content: space-between;
+    justify-content: center;  /* Centra las tarjetas horizontalmente */
+    gap: 20px;  /* Añade espacio entre las tarjetas */
 }
 
-/* Estilo general de las tarjetas */
 .card {
     position: relative;
-    width: 32%; /* Asegura que las tarjetas ocupen el mismo ancho */
+    width: 300px; /* Ajusta el ancho de las tarjetas si es necesario */
     margin-bottom: 20px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra alrededor de la tarjeta */
     transition: transform 0.3s ease-in-out; /* Transición suave cuando se pasa el cursor */
@@ -95,6 +96,7 @@ nav {
     overflow: hidden; /* Oculta el contenido que se salga de la tarjeta */
     height: 400px; /* Altura fija para todas las tarjetas */
 }
+
 
 /* Efecto hover en la tarjeta */
 .card:hover {
@@ -126,8 +128,22 @@ nav {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 15px;
+    color: white !important; /* Cambia el color de los subtítulos de las tarjetas a blanco */
+
+}
+/* Cambia el color de los textos de descuento a blanco */
+.card .card-subtitle {
+    color: white !important; /* Asegura que el texto sea blanco */
 }
 
+.card-link {
+    color: white !important; /* Cambia el color del enlace "Ver más" a blanco */
+    font-weight: bold; /* Opcional: hace que el texto sea negrita */
+    text-decoration: underline; /* Añade un subrayado opcional */
+}
+.card-link:hover {
+    color: yellow; /* Cambia el color cuando pasas el ratón por encima (opcional) */
+}
 /* Descripción dentro de la tarjeta */
 .card-text {
     font-size: 16px;
@@ -163,12 +179,22 @@ nav {
 
 /* Estilo del footer */
 footer {
-    position: fixed; /* Fija el footer en la parte inferior de la ventana */
-    left: 0; /* Alinea el footer a la izquierda */
-    bottom: 0; /* Alinea el footer en la parte inferior */
-    width: 100%; /* Hace que el footer ocupe el ancho completo */
-    background-color: #D9D9D9; /* Color de fondo del footer */
-    color: white; /* Color del texto del footer */
-    height: 80px; /* Altura del footer */
-    text-align: center; /* Centra el texto dentro del footer */
+    position: fixed;
+    left: 0;
+    bottom: 0;  
+    width: 100%;
+    background-color: #D9D9D9;
+    color: black; /* Cambiamos el color del texto a negro */
+    height: 80px;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Cambiar el color del texto en el footer */
+footer .footer-text {
+    color: black; /* Este color se puede cambiar fácilmente */
 }
