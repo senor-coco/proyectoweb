@@ -10,6 +10,11 @@
 <body>
 <header>
     <nav>
+        <!-- Contenedor para el logo -->
+        <div class="logo-container">
+            <img src="vista/imagenes/jpg/logo1.jpeg" alt="Logo" class="logo">
+        </div>
+        
         <!-- Contenedor para los enlaces, con una clase adicional -->
         <div class="nav-group">
             <ul class="nav justify-content-center">

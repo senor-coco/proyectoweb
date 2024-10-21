@@ -1,24 +1,38 @@
 /* Estilo para la barra de navegación */
 nav {
     background-color: red;
-    background-image: url('../imagenes/jpg/fondodepantalla1.jpeg');
+    background-image: url('../imagenes/jpg/fondodepantalla2.jpeg'); /* Imagen de fondo */
     background-size: cover;
-    height: 200px; /* Ajusta la altura del nav para que los elementos se vean más abajo */
+    height: 200px;
     position: relative;
     display: flex;
-    justify-content: center; /* Centra el contenedor circular horizontalmente */
-    align-items: center; /* Centra el contenido verticalmente */
+    justify-content: center;
+    align-items: center;
 }
 
-/* Contenedor que agrupa los enlaces */
+/* Contenedor del logo, movido un poco más a la derecha */
+.logo-container {
+    position: absolute;
+    top: 20px; /* Ajusta la distancia desde el borde superior */
+    left: 250px; /* Mueve el logo más a la derecha */
+    z-index: 10; /* Asegura que el logo esté por encima del fondo */
+}
+
+/* Estilo del logo */
+.logo {
+    width: 150px; /* Ajusta el tamaño del logo */
+    height: auto; /* Mantiene la proporción del logo */
+}
+
+/* Contenedor que agrupa los enlaces, ahora cuadrado con bordes redondeados */
 .nav-group {
     background-color: white; /* Fondo blanco para el recuadro */
-    border-radius: 20%; /* Hace que el contenedor sea circular */
-    padding: 20px; /* Espaciado interno para darle margen al círculo */
+    border-radius: 15px; /* Borde redondeado pero no completamente circular */
+    padding: 20px 40px; /* Más espaciado horizontalmente para hacer el recuadro más ancho */
     display: inline-block;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Agrega una sombra sutil */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Sombra sutil */
     position: absolute;
-    bottom: 10px; /* Baja el círculo respecto al nav */
+    bottom: 20px; /* Baja el recuadro respecto al nav */
 }
 
 /* Estilo de los enlaces dentro del nav */
@@ -33,8 +47,10 @@ nav {
 .nav-link:hover {
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 5px; /* Añade un pequeño borde redondeado solo al hover */
+    border-radius: 5px;
 }
+
+
 
     footer{
         position: fixed;
