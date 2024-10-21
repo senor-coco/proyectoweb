@@ -1,5 +1,5 @@
 <footer>
-    <p>Derechos Reservados</p>
+    <p>Redes Sociales</p>
 </footer>
 </body>
 </html>
