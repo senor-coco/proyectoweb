@@ -14,7 +14,8 @@
         <div class="logo-container">
             <img src="vista/imagenes/jpg/logo1.jpeg" alt="Logo" class="logo">
         </div>
-        
+        <div class="header-paquetes">Paquetes más solicitados</div>
+
         <!-- Contenedor para los enlaces, con una clase adicional -->
         <div class="nav-group">
             <ul class="nav justify-content-center">
