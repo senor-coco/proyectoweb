@@ -64,20 +64,26 @@ nav {
     border-radius: 5px;
 }
 
-/* Contenedor del texto "Paquetes más solicitados" */
-.header-paquetes {
-    background-color: white; /* Fondo blanco */
-    color: black; /* Texto en negro */
-    font-weight: bold; /* Texto en negrita */
-    font-size: 28px; /* Tamaño de la fuente */
-    text-align: center; /* Centrar el texto */
-    padding: 10px; /* Añadir un padding al texto */
 
-    margin-bottom: 150px; /* Espacio debajo del texto */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra debajo del recuadro */
-    position: relative; /* Añadimos posición relativa */
-    top: 200px; /* Ajusta el valor para bajar el recuadro */
+
+/* Contenedor del texto "Paquetes más solicitados" */
+/* Estilo actualizado para el contenedor de "Paquetes más solicitados" */
+.header-paquetes {
+    background-color: hsla(0, 0%, 100%, 0.833); /* Fondo blanco con transparencia */
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 20px 40px; /* Mismo padding que el recuadro de los enlaces */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Sombra sutil para profundidad */
+    display: inline-block; /* Ajusta el tamaño del contenedor */
+    position: relative;
+    top: 150px; /* Ajusta la posición superior */
+    text-align: center; /* Centra el texto */
+    font-size: 28px; /* Tamaño de la fuente */
+    font-weight: bold; /* Texto en negrita */
+    z-index: 2; /* Asegura que esté por encima de otros elementos */
+    width: fit-content; /* Ajusta el ancho al contenido */
+    margin: 0 auto; /* Centra el recuadro horizontalmente */
 }
+
 .container {
     margin-top: 80px;  /* Baja el contenido de las tarjetas 80px más */
     display: flex;
@@ -86,7 +92,9 @@ nav {
 }
 
 .card {
-    position: relative;
+    position: relative; /* Permite usar top, left, etc. para ajustar la posición */
+    top: 51px; /* Ajusta la posición vertical, puedes cambiar este valor */
+    left: 0px; /* Ajusta la posición horizontal si lo deseas */
     width: 300px; /* Ajusta el ancho de las tarjetas si es necesario */
     margin-bottom: 20px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra alrededor de la tarjeta */
@@ -114,7 +122,7 @@ nav {
     z-index: 3; /* Asegura que la imagen esté por encima de los recuadros de color */
 }
 
-/* Contenedor del texto en la tarjeta */
+/* Contenido de la tarjeta */
 .card-body {
     position: relative;
     z-index: 2; /* Asegura que el texto esté por encima de los recuadros */
