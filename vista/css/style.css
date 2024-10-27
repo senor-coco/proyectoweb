@@ -93,7 +93,7 @@ nav {
 
 .card {
     position: relative; /* Permite usar top, left, etc. para ajustar la posición */
-    top: 51px; /* Ajusta la posición vertical, puedes cambiar este valor */
+    top: 50px; /* Ajusta la posición vertical, puedes cambiar este valor */
     left: 0px; /* Ajusta la posición horizontal si lo deseas */
     width: 300px; /* Ajusta el ancho de las tarjetas si es necesario */
     margin-bottom: 20px;
@@ -206,3 +206,65 @@ footer p {
 footer .footer-text {
     color: black; /* Este color se puede cambiar fácilmente */
 }
+
+/* Estilo para el contenedor general */
+.info-group {
+    display: flex;
+    justify-content: space-between; /* Espacia los elementos dentro del contenedor */
+    align-items: center;
+    padding: 20px;
+    background-color: hsla(0, 0%, 100%, 0.833); /* Fondo del contenedor general */
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    margin: 20px auto; /* Centra el contenedor en la página */
+    max-width: 800px; /* Ancho máximo para mantener el diseño compacto */
+}
+
+/* Estilo para la información de ventas */
+.sales-info {
+    background-color: red;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    margin-right: 20px;
+    width: 250px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sales-info p {
+    margin: 0;
+}
+
+.sales-number {
+    font-size: 18px;
+    margin-top: 5px; /* Añade espacio entre el texto y el número */
+}
+
+/* Estilo para el contenedor de enlaces */
+.link-group {
+    display: flex;
+    gap: 20px;
+}
+
+/* Estilo de los enlaces */
+.info-link {
+    background-color: white;
+    color: black;
+    padding: 15px 30px;
+    border-radius: 15px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.info-link:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Cambia ligeramente el fondo al hacer hover */
+}
+
