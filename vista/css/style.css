@@ -216,7 +216,7 @@ footer .footer-text {
     background-color: hsla(0, 0%, 100%, 0.833); /* Fondo del contenedor general */
     border-radius: 15px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    margin: 20px auto; /* Centra el contenedor en la página */
+    margin: 200px auto; /* Centra el contenedor en la página */
     max-width: 800px; /* Ancho máximo para mantener el diseño compacto */
 }
 
