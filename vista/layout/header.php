@@ -31,4 +31,17 @@
             </ul>
         </div>
     </nav>
+
+    <!-- Añade el nuevo bloque aquí, antes de cerrar el header -->
+    <div class="info-group">
+        <div class="sales-info">
+            <p>Para ventas</p>
+            <p class="sales-number">800 245 0825</p>
+        </div>
+        <div class="link-group">
+            <a href="#" class="info-link">Mis viajes</a>
+            <a href="#" class="info-link">Iniciar sesión</a>
+        </div>
+    </div>
+
 </header>

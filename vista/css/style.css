@@ -206,29 +206,29 @@ footer p {
 footer .footer-text {
     color: black; /* Este color se puede cambiar fácilmente */
 }
-
-/* Estilo para el contenedor general */
+/* Estilo para el contenedor general en la esquina superior derecha */
 .info-group {
     display: flex;
-    justify-content: space-between; /* Espacia los elementos dentro del contenedor */
     align-items: center;
-    padding: 20px;
+    padding: 10px;
     background-color: hsla(0, 0%, 100%, 0.833); /* Fondo del contenedor general */
     border-radius: 15px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    margin: 200px auto; /* Centra el contenedor en la página */
-    max-width: 800px; /* Ancho máximo para mantener el diseño compacto */
+    position: absolute; /* Posicionamiento absoluto para colocar en la esquina */
+    top: 20px; /* Ajusta la distancia desde la parte superior */
+    right: 20px; /* Ajusta la distancia desde la derecha */
+    z-index: 10; /* Asegura que esté por encima de otros elementos */
 }
 
 /* Estilo para la información de ventas */
 .sales-info {
     background-color: red;
     color: white;
-    padding: 20px;
+    padding: 15px;
     border-radius: 15px;
     text-align: center;
     margin-right: 20px;
-    width: 250px;
+    width: 180px; /* Ajusta el ancho del recuadro */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -237,27 +237,27 @@ footer .footer-text {
 }
 
 .sales-number {
-    font-size: 18px;
-    margin-top: 5px; /* Añade espacio entre el texto y el número */
+    font-size: 16px;
+    margin-top: 5px; /* Espacio entre el texto y el número */
 }
 
 /* Estilo para el contenedor de enlaces */
 .link-group {
     display: flex;
-    gap: 20px;
+    gap: 10px;
 }
 
 /* Estilo de los enlaces */
 .info-link {
     background-color: white;
     color: black;
-    padding: 15px 30px;
+    padding: 10px 15px;
     border-radius: 15px;
     text-align: center;
     text-decoration: none;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     font-weight: bold;
-    width: 150px;
+    width: 120px; /* Ajusta el ancho del enlace */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -267,4 +267,3 @@ footer .footer-text {
 .info-link:hover {
     background-color: rgba(0, 0, 0, 0.1); /* Cambia ligeramente el fondo al hacer hover */
 }
-
