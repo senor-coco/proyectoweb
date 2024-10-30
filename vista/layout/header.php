@@ -32,7 +32,7 @@
         </div>
     </nav>
 
-    <!-- Añade el nuevo bloque aquí, antes de cerrar el header -->
+    <!-- Bloque de información -->
     <div class="info-group">
         <div class="sales-info">
             <p>Para ventas</p>
@@ -40,8 +40,7 @@
         </div>
         <div class="link-group">
             <a href="#" class="info-link">Mis viajes</a>
-            <a href="#" class="info-link">Iniciar sesión</a>
+            <a href="index.php?i=login" class="info-link">Iniciar sesión</a> <!-- Enlace a login -->
         </div>
     </div>
-
 </header>
