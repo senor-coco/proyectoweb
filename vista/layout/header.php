@@ -18,18 +18,18 @@
 
         <!-- Contenedor para los enlaces, con una clase adicional -->
         <div class="nav-group">
-            <ul class="nav justify-content-center">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Servicios</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="index.php?i=conocenos">Conócenos</a>
+        <ul class="nav justify-content-center">
+    <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="index.php">Inicio</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="index.php?i=servicios">Servicios</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="index.php?i=conocenos">Conócenos</a>
+    </li>
+</ul>
 
-                </li>
-            </ul>
         </div>
     </nav>
 
