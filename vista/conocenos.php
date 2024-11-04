@@ -11,31 +11,75 @@
             background-image: url('vista/imagenes/jpg/fondodeperfiles.jpg'); /* Imagen de fondo */
             background-size: cover; /* Hace que la imagen cubra toda la pantalla */
             background-position: center; /* Centra la imagen */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            height: 100vh;
             margin: 0;
             font-family: Arial, sans-serif;
         }
 
-        /* Botón de regresar */
-        .back-btn {
-            display: block;
-            margin: 20px auto;
-            padding: 10px 20px;
-            background: #555;
-            color: white;
-            text-align: center;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            width: fit-content;
+        /* Contenedor del logo en la esquina superior izquierda */
+        .logo-container {
+            position: absolute;
+            top: 20px;
+            left: 40px;
+            z-index: 10;
         }
 
-        .back-btn:hover {
-            background: #333;
+        .logo {
+            width: 150px;
+            height: auto;
+        }
+
+        /* Bloque de información en la esquina superior derecha */
+        .info-group {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background-color: hsla(0, 0%, 100%, 0.833); /* Fondo blanco con transparencia */
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .sales-info {
+            background-color: red;
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+            margin-right: 20px;
+            font-weight: bold;
+        }
+
+        .sales-info p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        .sales-number {
+            font-size: 18px;
+            margin-top: 5px;
+        }
+
+        .link-group {
+            display: flex;
+            gap: 10px;
+        }
+
+        .info-link {
+            background-color: white;
+            color: black;
+            padding: 10px 15px;
+            border-radius: 10px;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .info-link:hover {
+            background-color: rgba(0, 0, 0, 0.1);
         }
 
         /* Contenedor principal de perfiles */
@@ -50,7 +94,10 @@
             max-width: 1200px;
             width: 90%;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-            margin-top: 20px; /* Para separar del botón */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); /* Centra el contenedor en la pantalla */
         }
 
         /* Tarjeta de perfil */
@@ -92,16 +139,53 @@
         .profile-socials a:hover {
             color: #0073e6;
         }
+
+        /* Botón de regresar */
+        .back-btn {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background: #555;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            width: fit-content;
+        }
+
+        .back-btn:hover {
+            background: #333;
+        }
     </style>
 </head>
 <body>
+
+    <!-- Logo en la esquina superior izquierda -->
+    <div class="logo-container">
+        <img src="vista/imagenes/jpg/logo1.jpeg" alt="Chiapas Tours Logo" class="logo">
+    </div>
+
+    <!-- Bloque de información en la esquina superior derecha -->
+    <div class="info-group">
+        <div class="sales-info">
+            <p>Para ventas</p>
+            <p class="sales-number">800 245 0825</p>
+        </div>
+        <div class="link-group">
+            <a href="#" class="info-link">Mis viajes</a>
+            <a href="index.php?i=login" class="info-link">Iniciar sesión</a>
+            <a href="index.php?i=login&action=register" class="info-link">Regístrate</a>
+        </div>
+    </div>
+
     <!-- Botón de regreso a la página principal -->
     <a href="http://localhost/proyectoweb/index.php" class="back-btn">Regresar a la página principal</a>
 
     <div class="profile-container">
         <!-- Tarjetas de perfil para cada miembro -->
         <div class="profile-card">
-            <img src="vista/imagenes/jpeg/calvo.jpeg" alt="Carlos Enrique Calvo Gomez" class="profile-image">
+            <img src="vista/imagenes/jpg/calvo.jpeg" alt="Carlos Enrique Calvo Gomez" class="profile-image">
             <div class="profile-name">Carlos Enrique Calvo Gomez</div>
             <div class="profile-email">carlos.calvo32@unach.mx</div>
             <div class="profile-socials">
@@ -111,7 +195,7 @@
         </div>
 
         <div class="profile-card">
-            <img src="vista/imagenes/jpeg/angel.jpeg" alt="Ángel González Tacías" class="profile-image">
+            <img src="vista/imagenes/jpg/angel.jpeg" alt="Ángel González Tacías" class="profile-image">
             <div class="profile-name">Ángel González Tacías</div>
             <div class="profile-email">angel.gonzalez64@unach.mx</div>
             <div class="profile-socials">
@@ -121,7 +205,7 @@
         </div>
 
         <div class="profile-card">
-            <img src="vista/imagenes/jpeg/jorge.jpg" alt="Jorge Alejandro Macias Guzmán" class="profile-image">
+            <img src="vista/imagenes/jpg/jorge.jpeg" alt="Jorge Alejandro Macias Guzmán" class="profile-image">
             <div class="profile-name">Jorge Alejandro Macias Guzmán</div>
             <div class="profile-email">jorge.macias79@unach.mx</div>
             <div class="profile-socials">
@@ -149,5 +233,6 @@
             </div>
         </div>
     </div>
+
 </body>
 </html>
