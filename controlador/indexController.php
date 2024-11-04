@@ -13,5 +13,9 @@ class IndexController {
     public static function login() {
         require_once("vista/auth/login.php");
     }
+    public static function conocenos() {
+        require_once("vista/conocenos.php");
+    }
+    
 }
 ?>

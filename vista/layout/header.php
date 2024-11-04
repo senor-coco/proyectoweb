@@ -26,7 +26,8 @@
                     <a class="nav-link" href="#">Servicios</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Conócenos</a>
+                    <a class="nav-link" href="index.php?i=conocenos">Conócenos</a>
+
                 </li>
             </ul>
         </div>
@@ -44,4 +45,5 @@
             <a href="index.php?i=login&action=register" class="info-link">Regístrate</a> <!-- Botón de "Regístrate" -->
         </div>
     </div>
+
 </header>
