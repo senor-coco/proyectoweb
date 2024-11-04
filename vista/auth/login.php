@@ -8,7 +8,7 @@
     <style>
         /* Fondo de pantalla */
         body {
-            background-image: url('../imagenes/fondodepantalla1.jpeg'); /* Imagen de fondo */
+            background-image: url('vista/imagenes/fondodepantalla1.jpeg'); /* Imagen de fondo */
             background-size: cover; /* Hace que la imagen cubra toda la pantalla */
             background-position: center; /* Centra la imagen */
             display: flex;
@@ -62,7 +62,7 @@
 </head>
 <body>
     <div class="container">
-        <img src="../imagenes/fondodepantalla1.jpeg" alt="Chiapas Tours">
+        <img src="vista/imagenes/fondodepantalla1.jpeg" alt="Chiapas Tours">
         <h1>Bienvenido a tu próximo viaje</h1>
         <button class="button facebook" onclick="loginWithFacebook()">Acceder con Facebook</button>
         <button class="button google" onclick="loginWithGoogle()">Acceder con Google</button>
