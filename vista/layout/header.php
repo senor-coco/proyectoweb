@@ -40,7 +40,8 @@
         </div>
         <div class="link-group">
             <a href="#" class="info-link">Mis viajes</a>
-            <a href="index.php?i=login" class="info-link">Iniciar sesión</a> <!-- Enlace a login -->
+            <a href="index.php?i=login" class="info-link">Iniciar sesión</a>
+            <a href="index.php?i=login&action=register" class="info-link">Regístrate</a> <!-- Botón de "Regístrate" -->
         </div>
     </div>
 </header>
