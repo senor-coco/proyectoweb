@@ -1,37 +1,23 @@
 <?php
 class ProducetoModel{
-    private $listaProctos;
-    public function __construct()
-    {
-
-         $shis->listaProductos=array();
-
-
+    private $listaProductos;
+    public function __construct(){
+        $this->listaProductos=array();
     }
-    public function ObtenerProductos(){
-include_once('conexion.php');
-$cnn=new Conexion();
-$consulta = "Selec * from productos;";
-$resultado =$css-> prepare($consulta);
-$resultado-> execute();
-while($fila = $resultado->fetch(PDO::FETCH_ASSOC)){
-    $shis-> listaProductos [] = $fila;
-
-
-
+    public function mostrarProductos(){
+        include_once('conexion.php');
+        $cnn=new Conexion();
+        $consula="select * from Productos;";
+        $resultado=$cnn->prepare($consula);
+        $resultado->execute(); 
+        while($filas = $resultado->FETCHALL(PDO::FETCH_ASSOC)) {
+                $this->listaProductos[]=$filas;
+        }
+        return $this->listaProductos;
     }
-return $shis->listaProductos;
-
 
 
 }
-
-
-
-
-
-
-
 
 
 
