@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+header .logo img {
+    width: 100px;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+header .contacto {
+    text-align: center;
+}
+
+header .botones button {
+    margin-left: 10px;
+    padding: 5px 10px;
+}
+
+.servicios ul {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.servicios ul li {
+    text-align: center;
+}
+
+.servicios ul li img {
+    width: 80px;
+    height: 80px;
+}
+
+.redes-sociales {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.redes-sociales .iconos a img {
+    width: 30px;
+    margin: 0 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
