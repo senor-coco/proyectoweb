@@ -1,7 +1,0 @@
-en el botón de la pagina principal tenemos el botón de "Inicio" "Servicios" "Conocenos"
-cuando le demos a "Servicios" vamos a ir a otra pagina, donde va a mantener el logo, el baner de arriba, los botones de "Inicio" "Servicios" "Conocenos" y los botones de arriba de; "Para ventas 800 245 0825"  "Mis viajes" "Iniciar sesión" "Regístrate" y en el footer también se va a mantener, lo que vamos agregar es un fondo nuevo que es el "aeropuerto.jpg" y un banner que va estar arriba del footer, donde el "banerdeabajo.jpg" pero no van ocupar tanto espacio porque un columna vertical de la izquierda va a tener unos botones con los nombres de: 
-"Paquetes" 
-"Hoteles" 
-"Vuelos" 
-"Actividades" 
-"Trasporte"
