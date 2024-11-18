@@ -28,7 +28,7 @@
       </div>
     </div>
 
-    <!-- Cabo San Lucas -->
+    <!-- Cabo San Lucas --> 
     <div class="col">
       <div class="card card-overlay" style="width: 18rem;">
       <img src="vista/imagenes/jpg/cabosanlucas.jpg" class="card-img-top" alt="Cabo San Lucas">

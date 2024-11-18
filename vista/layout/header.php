@@ -40,8 +40,8 @@
             <p class="sales-number">800 245 0825</p>
         </div>
         <div class="link-group">
-            <a href="#" class="info-link">Mis viajes</a>
-            <a href="index.php?i=login" class="info-link">Iniciar sesión</a>
+        <a href="index.php?i=misviajes" class="info-link">Mis viajes</a>
+        <a href="index.php?i=login" class="info-link">Iniciar sesión</a>
             <a href="index.php?i=login&action=register" class="info-link">Regístrate</a> <!-- Botón de "Regístrate" -->
         </div>
     </div>
