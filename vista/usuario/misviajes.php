@@ -1,5 +1,8 @@
 <?php 
 require_once('vista/layout/header.php'); // Incluye el encabezado
+
+// Posición del encabezado (modifica aquí para ajustar la posición)
+$headerStyle = "position: absolute; top: 234px; left: 810px; text-align: left;";
 ?>
 
 <!DOCTYPE html>
@@ -20,13 +23,6 @@ require_once('vista/layout/header.php'); // Incluye el encabezado
             padding: 25px;
             border-radius: 10px;
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-        }
-        .title {
-            font-size: 1.8em;
-            margin-bottom: 40px;
-            color: #333;
-            text-align: center;
-            font-weight: bold;
         }
         .trip-item {
             display: flex;
@@ -106,10 +102,12 @@ require_once('vista/layout/header.php'); // Incluye el encabezado
 
 <body>
 
+<!-- Encabezado "Historial de Viajes" -->
+<div style="margin-bottom: 20px; padding: 10px; background-color: rgba(240, 240, 240, 0.9); border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); <?= $headerStyle; ?>">
+    <h2 style="font-size: 1.8em; font-weight: bold; color: #333;">Historial de Viajes</h2>
+</div>
 
 <div class="container">
-   
-
     <!-- Lista de paquetes de viaje -->
     <div class="trip-item">
         <img src="paris-las-vegas.jpg" alt="Paris Las Vegas">
@@ -143,18 +141,16 @@ require_once('vista/layout/header.php'); // Incluye el encabezado
         </div>
         <div class="trip-price">MXN$20,980</div>
     </div>
-
-
 </div>
 
-    <!-- Botón de regreso a la página principal -->
-    <div class="back-btn-container">
-        <a href="index.php" class="back-btn">Regresar a la página principal</a>
-    </div>
+<!-- Botón de regreso a la página principal -->
+<div class="back-btn-container">
+    <a href="index.php" class="back-btn">Regresar a la página principal</a>
+</div>
+
 </body>
 </html>
 
 <?php 
 require_once('vista/layout/footer.php'); // Incluye el pie de página
 ?>
-    
