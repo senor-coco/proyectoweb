@@ -1,5 +1,14 @@
+<?php
+$mostrarPaquetes = false;
+require_once('vista/layout/header.php');
+?>
 <!DOCTYPE html>
 <html lang="es">
+
+ <!-- Botón de regreso a la página principal -->
+ <a href="http://localhost/proyectoweb/index.php" class="back-btn">Regresar a la página principal</a>
+
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,96 +17,30 @@
     <style>
         /* Fondo de pantalla */
         body {
-            background-image: url('vista/imagenes/jpg/fondodeperfiles.jpg'); /* Imagen de fondo */
-            background-size: cover; /* Hace que la imagen cubra toda la pantalla */
-            background-position: center; /* Centra la imagen */
+            background-image: url('vista/imagenes/jpg/perfiles1.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
             margin: 0;
             font-family: Arial, sans-serif;
+            color: #333;
         }
 
-        /* Contenedor del logo en la esquina superior izquierda */
-        .logo-container {
-            position: absolute;
-            top: 20px;
-            left: 40px;
-            z-index: 10;
-        }
-
-        .logo {
-            width: 150px;
-            height: auto;
-        }
-
-        /* Bloque de información en la esquina superior derecha */
-        .info-group {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            display: flex;
-            align-items: center;
-            padding: 10px;
-            background-color: hsla(0, 0%, 100%, 0.833); /* Fondo blanco con transparencia */
-            border-radius: 15px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-        }
-
-        .sales-info {
-            background-color: red;
-            color: white;
-            padding: 10px;
-            border-radius: 10px;
-            text-align: center;
-            margin-right: 20px;
-            font-weight: bold;
-        }
-
-        .sales-info p {
-            margin: 0;
-            font-size: 14px;
-        }
-
-        .sales-number {
-            font-size: 18px;
-            margin-top: 5px;
-        }
-
-        .link-group {
-            display: flex;
-            gap: 10px;
-        }
-
-        .info-link {
-            background-color: white;
-            color: black;
-            padding: 10px 15px;
-            border-radius: 10px;
-            text-align: center;
-            text-decoration: none;
-            font-weight: bold;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            transition: background-color 0.3s ease-in-out;
-        }
-
-        .info-link:hover {
-            background-color: rgba(0, 0, 0, 0.1);
-        }
-
-        /* Contenedor principal de perfiles */
+        /* Contenedor principal para centrar perfiles */
         .profile-container {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             gap: 20px;
             padding: 20px;
-            background: rgba(255, 255, 255, 0.85); /* Fondo blanco semitransparente */
+            background: rgba(255, 255, 255, 0.85);
             border-radius: 15px;
-            max-width: 1200px;
-            width: 90%;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%); /* Centra el contenedor en la pantalla */
+            width: 100%;
+            max-width: 1200px;
+            margin: auto;
+            position: relative;
+            top: 0px; /* Ajusta el recuadro más abajo */
         }
 
         /* Tarjeta de perfil */
@@ -161,27 +104,6 @@
 </head>
 <body>
 
-    <!-- Logo en la esquina superior izquierda -->
-    <div class="logo-container">
-        <img src="vista/imagenes/jpg/logo1.jpeg" alt="Chiapas Tours Logo" class="logo">
-    </div>
-
-    <!-- Bloque de información en la esquina superior derecha -->
-    <div class="info-group">
-        <div class="sales-info">
-            <p>Para ventas</p>
-            <p class="sales-number">800 245 0825</p>
-        </div>
-        <div class="link-group">
-            <a href="#" class="info-link">Mis viajes</a>
-            <a href="index.php?i=login" class="info-link">Iniciar sesión</a>
-            <a href="index.php?i=login&action=register" class="info-link">Regístrate</a>
-        </div>
-    </div>
-
-    <!-- Botón de regreso a la página principal -->
-    <a href="http://localhost/proyectoweb/index.php" class="back-btn">Regresar a la página principal</a>
-
     <div class="profile-container">
         <!-- Tarjetas de perfil para cada miembro -->
         <div class="profile-card">
@@ -214,6 +136,8 @@
             </div>
         </div>
 
+        <!-- Perfiles movidos hacia abajo -->
+        <div style="flex-basis: 100%; height: 0;"></div> <!-- Línea para romper la fila -->
         <div class="profile-card">
             <img src="vista/imagenes/jpg/antonio.jpeg" alt="Luis Antonio Trujillo Hernandez" class="profile-image">
             <div class="profile-name">Luis Antonio Trujillo Hernandez</div>
@@ -236,3 +160,7 @@
 
 </body>
 </html>
+<?php 
+require_once('vista/layout/footer.php');
+?>
+<?
