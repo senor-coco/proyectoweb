@@ -3,7 +3,7 @@ $mostrarPaquetes = false;
 require_once('vista/layout/header.php');
 
 // Estilo dinámico para el banner
-$bannerStyle = "height: 200px; width: 100%; bottom: 38px; left: 5%; position: fixed; z-index: -100;";
+$bannerStyle = "height: 200px; width: 100%; bottom: 38px; left: 10%; position: fixed; z-index: -100;";
 $sidebarStyle = "position: fixed; top: 200px; left: 0.50px; height: calc(91.29% - 200px);"; // Ajusta la altura aquí
 ?>
 
