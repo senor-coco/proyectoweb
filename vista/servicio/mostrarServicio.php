@@ -97,13 +97,13 @@ $sidebarStyle = "position: fixed; top: 200px; left: 0.50px; height: calc(91.29% 
         <!-- Barra lateral con fondo -->
         <div class="sidebar-container" style="<?= $sidebarStyle; ?>">
             <div class="sidebar">
-                <a href="#" class="icon-button">
-                    <img src="vista/imagenes/png/paquetes.png" alt="Paquetes">
-                    <span>Paquetes</span>
+                
+                <a href="index.php?i=paquetes" class="icon-button">
+                <img src="vista/imagenes/png/paquetes.png" alt="Paquetes"> Paquetes
                 </a>
-                <a href="#" class="icon-button">
-                    <img src="vista/imagenes/png/hoteles.png" alt="Hoteles">
-                    <span>Hoteles</span>
+                <a href="index.php?i=hoteles" class="icon-button">
+                <img src="vista/imagenes/png/hoteles.png" alt="Hoteles">
+                <span>Hoteles</span>
                 </a>
                 <a href="index.php?i=vuelos" class="icon-button">
                 <img src="vista/imagenes/png/vuelos.png" alt="Vuelos">

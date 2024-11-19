@@ -38,8 +38,17 @@ class IndexController {
 
     // Método para la página "Vuelos"
     public static function vuelos() {
-        require_once("vista/vuelos/vuelos.php"); // Ruta correcta de la vista
+        require_once("vista/vuelos/vuelos.php"); // Ruta correcta de la vista "Vuelos"
     }
-    
+
+    // Método para la página "Paquetes"
+    public static function paquetes() {
+        require_once("vista/paquetes/paquetes.php"); // Ruta correcta de la vista "Paquetes"
+    }
+
+    // Método para la página "Hoteles"
+    public static function hoteles() {
+        require_once("vista/hoteles/hoteles.php"); // Ruta correcta de la vista "Hoteles"
+    }
 }
 ?>
