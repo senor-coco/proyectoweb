@@ -117,7 +117,7 @@ $sidebarStyle = "position: fixed; top: 200px; left: 0.50px; height: calc(91.29% 
                     <span>Actividades</span>
                 </a>
                 <!-- Enlace a transporte -->
-                <a href="index.php?i=trasporte" class="icon-button">
+                <a href="index.php?i=transporte" class="icon-button">
                     <img src="vista/imagenes/png/trasporte.png" alt="Transporte">
                     <span>Transporte</span>
                 </a>
