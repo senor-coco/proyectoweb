@@ -264,6 +264,22 @@ require_once('vista/layout/footer.php');
        <!-- Botón de regreso a la página principal -->
        <a href="http://localhost/proyectoweb/index.php" class="back-btn">Regresar a la página principal</a>
 
+<!-- Botón de regreso a la página servicios -->
+<a href="http://localhost/proyectoweb/index.php?i=servicios" class="back-btn">Regresar a la página servicios</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

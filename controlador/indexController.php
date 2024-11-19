@@ -55,5 +55,10 @@ class IndexController {
     public static function transporte() {
         require_once("vista/transporte/transporte.php"); // Ruta correcta de la vista "Transporte"
     }
+
+    // Método para la página "Actividades"
+    public static function actividades() {
+        require_once("vista/actividades/actividades.php"); // Ruta correcta de la vista "Actividades"
+    }
 }
 ?>

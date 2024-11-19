@@ -99,7 +99,8 @@ $sidebarStyle = "position: fixed; top: 200px; left: 0.50px; height: calc(91.29% 
             <div class="sidebar">
                 <!-- Enlace a paquetes -->
                 <a href="index.php?i=paquetes" class="icon-button">
-                    <img src="vista/imagenes/png/paquetes.png" alt="Paquetes"> Paquetes
+                    <img src="vista/imagenes/png/paquetes.png" alt="Paquetes"> 
+                    <span>Paquetes</span>
                 </a>
                 <!-- Enlace a hoteles -->
                 <a href="index.php?i=hoteles" class="icon-button">
