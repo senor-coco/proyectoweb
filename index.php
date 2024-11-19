@@ -10,7 +10,9 @@ if (isset($_GET['i'])):
     if (method_exists('IndexController', $metodo)):
         IndexController::{$metodo}(); // Llamar al método correspondiente
     else:
-        echo "Error: Método no encontrado."; // Mensaje de error si el método no existe
+        // Mostrar un mensaje de error si el método no existe
+        echo "<h1>Error: Página no encontrada</h1>";
+        echo "<p>El recurso solicitado no está disponible.</p>";
     endif;
 else:
     // Si no se pasa el parámetro 'i', cargar la página principal

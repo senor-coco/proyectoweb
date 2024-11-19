@@ -105,9 +105,9 @@ $sidebarStyle = "position: fixed; top: 200px; left: 0.50px; height: calc(91.29% 
                     <img src="vista/imagenes/png/hoteles.png" alt="Hoteles">
                     <span>Hoteles</span>
                 </a>
-                <a href="#" class="icon-button">
-                    <img src="vista/imagenes/png/vuelos.png" alt="Vuelos">
-                    <span>Vuelos</span>
+                <a href="index.php?i=vuelos" class="icon-button">
+                <img src="vista/imagenes/png/vuelos.png" alt="Vuelos">
+                 <span>Vuelos</span>
                 </a>
                 <a href="#" class="icon-button">
                     <img src="vista/imagenes/png/actividades.png" alt="Actividades">

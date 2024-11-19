@@ -20,7 +20,7 @@ class IndexController {
 
     // Método para la página "Conócenos"
     public static function conocenos() {
-        require_once("vista/conocenos.php");
+        require_once("vista/conocenos/conocenos.php");
     }
 
     // Método para la página "Servicios"
@@ -35,5 +35,11 @@ class IndexController {
     public static function misviajes() {
         require_once("vista/usuario/misviajes.php"); // Carga la vista "Mis Viajes"
     }
+
+    // Método para la página "Vuelos"
+    public static function vuelos() {
+        require_once("vista/vuelos/vuelos.php"); // Ruta correcta de la vista
+    }
+    
 }
 ?>

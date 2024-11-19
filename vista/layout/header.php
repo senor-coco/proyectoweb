@@ -12,7 +12,7 @@
         .info-link img {
             width: 28px; /* Tamaño de los íconos */
             height: 28px;
-            margin-right: 10px; /* Espaciado entre el ícono y el texto */
+            margin-right: 1px; /* Espaciado entre el ícono y el texto */
             vertical-align: middle; /* Alineación vertical */
         }
 
@@ -33,6 +33,13 @@
             font-size: 14px;
             font-weight: bold;
             color: #333;
+        }
+
+        /* Comentario: Si deseas ajustar el ancho y la altura de los botones de información (Mis viajes, Iniciar sesión, Regístrate) */
+        /* Puedes añadir ancho y alto aquí */
+        .info-link {
+            padding: 14px 15px; /* Ajustar el relleno interno del botón */
+            font-size: 14px; /* Ajustar el tamaño del texto */
         }
     </style>
 </head>
@@ -74,6 +81,7 @@
             <p class="sales-number">800 245 0825</p>
         </div>
         <div class="link-group">
+            <!-- Comentario: Aquí puedes ajustar el ancho y altura de los botones -->
             <a href="index.php?i=misviajes" class="info-link">
                 <img src="vista/imagenes/png/misviajes.png" alt="Mis viajes">Mis viajes
             </a>
