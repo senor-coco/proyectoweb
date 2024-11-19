@@ -18,4 +18,11 @@ if (isset($_GET['i'])) {
     // Si no se pasa el parámetro 'i', cargar la página principal
     IndexController::index();
 }
+
+// Inclusión para la página de transporte
+if (isset($_GET['i']) && $_GET['i'] === 'transporte') {
+    $controller = new IndexController();
+    $controller->transporte();
+    exit;
+}
 ?>

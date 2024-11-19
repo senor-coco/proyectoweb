@@ -14,17 +14,16 @@ $sidebarStyle = "position: fixed; top: 200px; left: 0.50px; height: calc(91.29% 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servicios - Chiapas Tours</title>
     <style>
- /* Fondo principal */
- body {
-    background-image: url('vista/imagenes/jpg/auropuerto2.jpg');
-    background-size: 90%; /* Ajusta el tamaño aquí, puede ser en % o px */
-    background-attachment: fixed;
-    background-position: calc(50% - -100px) calc(200% - 100px); /* Mueve el fondo a la izquierda y arriba */
-    margin: 0;
-    font-family: Arial, sans-serif;
-    color: #333;
-}
-
+        /* Fondo principal */
+        body {
+            background-image: url('vista/imagenes/jpg/auropuerto2.jpg');
+            background-size: 90%; /* Ajusta el tamaño aquí, puede ser en % o px */
+            background-attachment: fixed;
+            background-position: calc(50% - -100px) calc(200% - 100px); /* Mueve el fondo a la izquierda y arriba */
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
 
         /* Contenedor para la barra lateral con fondo */
         .sidebar-container {
@@ -84,8 +83,9 @@ $sidebarStyle = "position: fixed; top: 200px; left: 0.50px; height: calc(91.29% 
             position: fixed;
             transition: all 0.3s ease-in-out;
         }
-     /* Elimina cualquier borde o margen residual */
-         html, body {
+
+        /* Elimina cualquier borde o margen residual */
+        html, body {
             border: none;
             margin: 0;
             padding: 0;
@@ -97,23 +97,27 @@ $sidebarStyle = "position: fixed; top: 200px; left: 0.50px; height: calc(91.29% 
         <!-- Barra lateral con fondo -->
         <div class="sidebar-container" style="<?= $sidebarStyle; ?>">
             <div class="sidebar">
-                
+                <!-- Enlace a paquetes -->
                 <a href="index.php?i=paquetes" class="icon-button">
-                <img src="vista/imagenes/png/paquetes.png" alt="Paquetes"> Paquetes
+                    <img src="vista/imagenes/png/paquetes.png" alt="Paquetes"> Paquetes
                 </a>
+                <!-- Enlace a hoteles -->
                 <a href="index.php?i=hoteles" class="icon-button">
-                <img src="vista/imagenes/png/hoteles.png" alt="Hoteles">
-                <span>Hoteles</span>
+                    <img src="vista/imagenes/png/hoteles.png" alt="Hoteles">
+                    <span>Hoteles</span>
                 </a>
+                <!-- Enlace a vuelos -->
                 <a href="index.php?i=vuelos" class="icon-button">
-                <img src="vista/imagenes/png/vuelos.png" alt="Vuelos">
-                 <span>Vuelos</span>
+                    <img src="vista/imagenes/png/vuelos.png" alt="Vuelos">
+                    <span>Vuelos</span>
                 </a>
-                <a href="#" class="icon-button">
+                <!-- Enlace a actividades -->
+                <a href="index.php?i=actividades" class="icon-button">
                     <img src="vista/imagenes/png/actividades.png" alt="Actividades">
                     <span>Actividades</span>
                 </a>
-                <a href="#" class="icon-button">
+                <!-- Enlace a transporte -->
+                <a href="index.php?i=trasporte" class="icon-button">
                     <img src="vista/imagenes/png/trasporte.png" alt="Transporte">
                     <span>Transporte</span>
                 </a>
