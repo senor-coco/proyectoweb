@@ -103,7 +103,6 @@ require_once('vista/layout/header.php');
     </style>
 </head>
 <body>
-
     <div class="profile-container">
         <!-- Tarjetas de perfil para cada miembro -->
         <div class="profile-card">
@@ -112,7 +111,7 @@ require_once('vista/layout/header.php');
             <div class="profile-email">carlos.calvo32@unach.mx</div>
             <div class="profile-socials">
                 <a href="https://www.facebook.com/profile.php?id=100087899752577&mibextid=ZbWKwL" target="_blank">Facebook</a> |
-                Instagram
+                <a href="https://github.com/CarlosCalvo07" target="_blank">GitHub</a>
             </div>
         </div>
 
@@ -122,7 +121,7 @@ require_once('vista/layout/header.php');
             <div class="profile-email">angel.gonzalez64@unach.mx</div>
             <div class="profile-socials">
                 <a href="https://www.facebook.com/p/%C3%81ngel-gonzalez-100058786625706/?mibextid=ZbWKwL" target="_blank">Facebook</a> |
-                Instagram
+                <a href="https://github.com/senor-coco" target="_blank">GitHub</a>
             </div>
         </div>
 
@@ -132,19 +131,20 @@ require_once('vista/layout/header.php');
             <div class="profile-email">jorge.macias79@unach.mx</div>
             <div class="profile-socials">
                 <a href="https://www.facebook.com/jorgealejandro.maciasguzman.9?mibextid=ZbWKwL" target="_blank">Facebook</a> |
-                Instagram
+                <a href="https://github.com/jorge-alejandroo" target="_blank">GitHub</a>
             </div>
         </div>
 
         <!-- Perfiles movidos hacia abajo -->
         <div style="flex-basis: 100%; height: 0;"></div> <!-- Línea para romper la fila -->
+
         <div class="profile-card">
             <img src="vista/imagenes/jpg/antonio.jpeg" alt="Luis Antonio Trujillo Hernandez" class="profile-image">
             <div class="profile-name">Luis Antonio Trujillo Hernandez</div>
             <div class="profile-email">luis.trujillo@unach.mx</div>
             <div class="profile-socials">
                 <a href="https://www.facebook.com/profile.php?id=100072249008527&mibextid=ZbWKwL" target="_blank">Facebook</a> |
-                Instagram
+                <a href="https://github.com/Beowulf-Lab" target="_blank">GitHub</a>
             </div>
         </div>
 
@@ -153,11 +153,10 @@ require_once('vista/layout/header.php');
             <div class="profile-name">Itzel Guadalupe Jimenez Gomez</div>
             <div class="profile-email">itzel.gomez43@unach.mx</div>
             <div class="profile-socials">
-                Facebook | Instagram
+                <a href="https://github.com/ItzelJimenez21" target="_blank">GitHub</a>
             </div>
         </div>
     </div>
-
 </body>
 </html>
 <?php 
