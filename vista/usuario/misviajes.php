@@ -1,6 +1,6 @@
 <?php 
 require_once('vista/layout/header.php'); // Incluye el encabezado
-require_once('vista/servicio/mostrarServicio.php');
+require_once('vista/servicio/mostrarServicio.php'); // Asegúrate de que esta página no incluya el video de fondo
 
 // Posición del encabezado (modifica aquí para ajustar la posición)
 $headerStyle = "position: absolute; top: 234px; left: 810px; text-align: left;";
@@ -98,21 +98,11 @@ $headerStyle = "position: absolute; top: 234px; left: 810px; text-align: left;";
         .back-btn:hover {
             background-color: #0056b3;
         }
-        /* Banner inferior dinámico */
-.bottom-banner {
-    background-image: none; /* Elimina la imagen de fondo previamente establecida */
-    background-size: auto; /* Restablece el tamaño del fondo a su valor predeterminado */
-    background-repeat: repeat; /* Restablece la repetición del fondo a su valor predeterminado */
-    position: fixed;
-    transition: all 0.3s ease-in-out; /* Mantiene la transición suave para otros cambios de estilo */
-}
-
-
+        
     </style>
 </head>
 
 <body>
-
 <!-- Encabezado "Historial de Viajes" -->
 <div style="margin-bottom: 20px; padding: 10px; background-color: rgba(240, 240, 240, 0.9); border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); <?= $headerStyle; ?>">
     <h2 style="font-size: 1.8em; font-weight: bold; color: #333;">Historial de Viajes</h2>

@@ -60,5 +60,14 @@ class IndexController {
     public static function actividades() {
         require_once("vista/actividades/actividades.php"); // Ruta correcta de la vista "Actividades"
     }
+
+    // Método para la página "Ventas"
+    public static function ventas() {
+        if (isset($_GET['paquete'])) {
+            $paquete = $_GET['paquete'];
+            // Aquí puedes añadir lógica para obtener detalles del paquete desde la base de datos si es necesario
+        }
+        require_once("vista/paquetes/ventas.php"); // Ruta correcta de la vista "Ventas"
+    }
 }
 ?>

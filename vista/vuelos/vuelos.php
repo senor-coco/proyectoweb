@@ -14,86 +14,91 @@ $headerStyle = "position: absolute; top: 230px; left: 700px; width: 500px;";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vuelos - Chiapas Tours</title>
     <style>
-        /* Fondo principal con la imagen de "fondodevuelos" */
-        body {
-            background-image: url('vista/imagenes/jpg/fondodevuelos.jpg'); /* Imagen de fondo */
-            background-size: cover; /* Escala para cubrir la pantalla */
-            background-position: center; /* Centrar la imagen */
-            background-attachment: fixed; /* Fija la imagen en su posición */
-            margin: 0;
-            font-family: Arial, sans-serif;
-            color: #333;
-        }
+    /* Fondo principal con la imagen de "fondodevuelos" */
+    body {
+        background-image: url('vista/imagenes/jpg/fondodevuelos.jpg'); /* Imagen de fondo */
+        background-size: cover; /* Escala para cubrir la pantalla */
+        background-position: center; /* Centrar la imagen */
+        background-attachment: fixed; /* Fija la imagen en su posición */
+        margin: 0;
+        font-family: Arial, sans-serif;
+        color: #333; /* Color de texto predeterminado */
+    }
 
-        /* Estilo de la burbuja */
-        .header-bubble {
-            background-color: rgba(240, 240, 240, 0.9);
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            padding: 10px;
-            text-align: center;
-            font-size: 1.8em;
-            font-weight: bold;
-            color: #333;
-        }
+    /* Estilo de la burbuja dinámica que aparece en la parte superior */
+    .header-bubble {
+        background-color: rgba(240, 240, 240, 0.9); /* Fondo semitransparente */
+        border-radius: 10px; /* Bordes redondeados */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+        padding: 10px; /* Espaciado interno */
+        text-align: center; /* Centrar texto */
+        font-size: 1.8em; /* Tamaño de texto grande */
+        font-weight: bold; /* Texto en negritas */
+        color: #333; /* Color del texto */
+    }
 
-        /* Contenedor de aerolíneas */
-        .container {
-            max-width: 1200px;
-            margin: 100px auto 50px;
-            background-color: rgba(255, 255, 255, 0.9);
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-            text-align: center;
-        }
+    /* Contenedor principal para las tarjetas */
+    .container {
+        max-width: 1200px; /* Ancho máximo del contenedor */
+        margin: 100px auto 50px; /* Márgenes superiores, inferiores y centrado horizontal */
+        background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente */
+        padding: 20px; /* Espaciado interno */
+        border-radius: 10px; /* Bordes redondeados */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para el contenedor */
+        text-align: center; /* Centrar contenido dentro del contenedor */
+    }
 
-        .airlines-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-        }
+    /* Contenedor de las tarjetas de aerolíneas */
+    .airlines-container {
+        display: flex; /* Flexbox para organizar las tarjetas */
+        flex-wrap: wrap; /* Permitir que las tarjetas se muevan a la siguiente fila si es necesario */
+        justify-content: center; /* Centrar tarjetas horizontalmente */
+        gap: 20px; /* Espaciado entre tarjetas */
+    }
 
-        .airline-card {
-            width: 200px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            padding: 15px;
-            text-align: center;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
+    /* Estilo individual de cada tarjeta */
+    .airline-card {
+        width: 200px; /* Ancho fijo de la tarjeta */
+        background-color: #fff; /* Fondo blanco */
+        border-radius: 10px; /* Bordes redondeados */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para la tarjeta */
+        padding: 15px; /* Espaciado interno */
+        text-align: center; /* Centrar contenido */
+        transition: transform 0.3s, box-shadow 0.3s; /* Transiciones suaves en hover */
+    }
 
-        .airline-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-        }
+    /* Efecto hover para las tarjetas */
+    .airline-card:hover {
+        transform: translateY(-5px); /* Eleva la tarjeta al pasar el cursor */
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Aumenta la sombra al pasar el cursor */
+    }
 
-        .airline-card img {
-            width: 100%;
-            height: 120px;
-            object-fit: cover;
-            border-radius: 10px;
-            margin-bottom: 10px;
-        }
+    /* Imagen dentro de cada tarjeta */
+    .airline-card img {
+        width: 100%; /* Ancho completo de la tarjeta */
+        height: 120px; /* Altura fija */
+        object-fit: cover; /* Ajustar imagen sin distorsión */
+        border-radius: 10px; /* Bordes redondeados */
+        margin-bottom: 10px; /* Espaciado inferior */
+    }
 
-        .airline-name {
-            font-size: 1.2em;
-            font-weight: bold;
-            color: #333;
-        }
-        /* Banner inferior dinámico */
-.bottom-banner {
-    background-image: none; /* Elimina la imagen de fondo previamente establecida */
-    background-size: auto; /* Restablece el tamaño del fondo a su valor predeterminado */
-    background-repeat: repeat; /* Restablece la repetición del fondo a su valor predeterminado */
-    position: fixed;
-    transition: all 0.3s ease-in-out; /* Mantiene la transición suave para otros cambios de estilo */
-}
+    /* Nombre de la aerolínea */
+    .airline-name {
+        font-size: 1.2em; /* Tamaño de texto mediano */
+        font-weight: bold; /* Texto en negritas */
+        color: #333; /* Color del texto */
+    }
 
+    /* Banner inferior dinámico */
+    .bottom-banner {
+        background-image: none; /* Elimina cualquier imagen previamente asignada */
+        background-size: auto; /* Tamaño de fondo predeterminado */
+        background-repeat: repeat; /* Repetir fondo si es necesario */
+        position: fixed; /* Fijo en la posición inferior */
+        transition: all 0.3s ease-in-out; /* Transiciones suaves */
+    }
+</style>
 
-    </style>
 </head>
 <body>
     <!-- Burbuja dinámica -->
