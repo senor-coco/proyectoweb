@@ -16,19 +16,20 @@ $sidebarStyle = "position: fixed; top: 200px; left: 0.50px; height: calc(91.29% 
     <style>
         /* Fondo principal */
         body {
-            background-image: url('vista/imagenes/jpg/auropuerto2.jpg');
+            background-image: url('vista/imagenes/jpg/fondodevista.jpg');
             background-size: 90%; /* Ajusta el tamaño aquí, puede ser en % o px */
             background-attachment: fixed;
             background-position: calc(50% - -100px) calc(200% - 100px); /* Mueve el fondo a la izquierda y arriba */
             margin: 0;
             font-family: Arial, sans-serif;
             color: #333;
+            overflow-x: hidden; /* Evita el desplazamiento horizontal */
         }
 
         /* Contenedor para la barra lateral con fondo */
         .sidebar-container {
             width: 300px;
-            position: fixed;
+            position: sticky; /* Hace que la barra sea pegajosa */
             top: 150px; /* Ajusta la posición vertical */
             left: 10px; /* Ajusta la posición horizontal */
             height: calc(100% - 200px); /* Altura ajustable, puedes cambiar "200px" */
@@ -63,7 +64,7 @@ $sidebarStyle = "position: fixed; top: 200px; left: 0.50px; height: calc(91.29% 
             margin-right: 15px;
         }
 
-        .sidebar .icon-button:hover {
+        .sidebar .icon-button:hover {x
             background: #e0e0e0;
             transform: translateY(-3px);
         }

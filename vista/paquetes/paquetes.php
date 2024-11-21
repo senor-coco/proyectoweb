@@ -4,6 +4,8 @@ require_once('vista/layout/header.php');
 
 // Estilo dinámico para la burbuja
 $headerStyle = "position: absolute; top: 230px; left: 700px; width: 500px; text-align: center; background-color: rgba(240, 240, 240, 0.9); padding: 10px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); font-size: 1.8em; font-weight: bold; color: #333;";
+require_once('vista/servicio/mostrarServicio.php');
+
 ?>
 
 <!DOCTYPE html>
@@ -93,14 +95,26 @@ $headerStyle = "position: absolute; top: 230px; left: 700px; width: 500px; text-
             margin-top: 10px;
             line-height: 1.4;
         }
+
+/* Banner inferior dinámico */
+.bottom-banner {
+    background-image: none; /* Elimina la imagen de fondo previamente establecida */
+    background-size: auto; /* Restablece el tamaño del fondo a su valor predeterminado */
+    background-repeat: repeat; /* Restablece la repetición del fondo a su valor predeterminado */
+    position: fixed;
+    transition: all 0.3s ease-in-out; /* Mantiene la transición suave para otros cambios de estilo */
+}
+
+
     </style>
 </head>
 <body>
-    <!-- Burbuja dinámica -->
-    <div class="header-bubble" style="<?= $headerStyle; ?>">
-        Nuestros Paquetes
-    </div>
-    
+<!-- Burbuja dinámica -->
+<div id="paquetes-header-bubble" class="header-bubble" style="<?= $headerStyle; ?>">
+    Nuestros Paquetes
+</div>
+
+
     <div class="container">
         <div class="packages-container">
             <!-- Paquete 1 -->
@@ -246,7 +260,7 @@ $headerStyle = "position: absolute; top: 230px; left: 700px; width: 500px; text-
                 <div class="package-details">
                     Hotel: Plaza Inn Hotel<br>
                     Vuelos: Durango a Culiacán, transporte a Los Mochis<br>
-                    Actividades: Tour en el Chepe y visita a las Barrancas del Cobre<br>
+                    Actividades: Tour en el Chepe y visita a las Barrancas del Cobre<br>    
                     Transporte alternativo: Renta de camioneta SUV<br>
                     Oferta especial: Botella de vino de bienvenida.
                 </div>

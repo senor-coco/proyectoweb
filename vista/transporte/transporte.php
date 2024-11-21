@@ -1,10 +1,12 @@
 <?php
 $mostrarPaquetes = false; // Ocultar paquetes más solicitados si es necesario
 require_once('vista/layout/header.php'); // Incluir header
+require_once('vista/servicio/mostrarServicio.php');
 
 // Estilo dinámico para la burbuja
 $headerStyle = "position: absolute; top: 230px; left: 700px; width: 500px; text-align: center; background-color: rgba(240, 240, 240, 0.9); padding: 10px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); font-size: 1.8em; font-weight: bold; color: #333;";
 ?>
+
 
 <!DOCTYPE html>
 <html lang="es">
@@ -86,6 +88,16 @@ $headerStyle = "position: absolute; top: 230px; left: 700px; width: 500px; text-
             color: #007bff;
             margin-top: 10px;
         }
+
+        /* Banner inferior dinámico */
+.bottom-banner {
+    background-image: none; /* Elimina la imagen de fondo previamente establecida */
+    background-size: auto; /* Restablece el tamaño del fondo a su valor predeterminado */
+    background-repeat: repeat; /* Restablece la repetición del fondo a su valor predeterminado */
+    position: fixed;
+    transition: all 0.3s ease-in-out; /* Mantiene la transición suave para otros cambios de estilo */
+}
+
     </style>
 </head>
 <body>
